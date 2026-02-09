@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW4 - Три кота</title>
+    <title>Три кота</title>
+
+    <link rel="stylesheet" href="./css/css-card.css">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./css/sass-card.css">
 </head>
 <body>
+
+<main class="page">
+    <div class="cats">
+
+        <article class="cat-card css-card">
+            <div class="cat-image">
+                <img src="./imgs/korzhik.png" alt="Korzhik">
+            </div>
+
+            <div class="cat-bio">
+                <h3 class="cat-name">Коржик</h3>
+                <p class="cat-age">Возраст: 6 лет</p>
+                <p class="cat-description">
+                    Весёлый и энергичный котёнок, обожающий приключения и спорт.
+                    Всегда готов придумать что-то новое и вовлечь всех в игру.
+                </p>
+            </div>
+
+            <div class="cat-actions">
+                <button class="btn-like">Like</button>
+                <button class="btn-pet">🤲 Погладить кота</button>
+            </div>
+        </article>
+
+        <article class="cat-card bootstrap-card card shadow-sm">
+            <div class="cat-image text-center">
+                <img src="./imgs/karamelka.png" alt="Karamelka" class="card-img-top">
+            </div>
+
+            <div class="cat-bio card-body">
+                <h3 class="cat-name card-title text-danger">Карамелька</h3>
+                <p class="cat-age fw-bold">Возраст: 5 лет</p>
+                <p class="cat-description card-text">
+                    Умная, рассудительная и добрая.
+                    Часто помогает братьям договориться и найти правильное решение.
+                    Любит рисовать и мечтать.
+                </p>
+            </div>
+
+            <div class="cat-actions card-footer">
+                <button class="btn btn-outline-danger float-start">❤️</button>
+                <button class="btn btn-primary float-end">🤲 Погладить кота</button>
+            </div>
+        </article>
+
+        <article class="cat-card sass-card">
+            <div class="cat-image">
+                <img src="./imgs/kompot.png" alt="Kompot">
+            </div>
+
+            <div class="cat-bio">
+                <h3 class="cat-name">Компот</h3>
+                <p class="cat-age">Возраст: 7 лет</p>
+                <p class="cat-description">
+                    Любознательный и немного задумчивый кот.
+                    Обожает читать, всё исследовать и задавать вопросы.
+                    Настоящий эксперт по науке среди котят.
+                </p>
+            </div>
+
+            <div class="cat-actions">
+                <button class="btn-like">Like</button>
+                <button class="btn-pet">🤲 Погладить кота</button>
+            </div>
+        </article>
+
+    </div>
+</main>
 
 </body>
 </html>
