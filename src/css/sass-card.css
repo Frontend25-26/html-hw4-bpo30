@@ -1,0 +1,54 @@
+.sass-card {
+    border: 2px solid #5cb85c;
+}
+
+.sass-card .cat-image {
+    text-align: center;
+}
+
+.sass-card .cat-image img {
+    width: 100%;
+}
+
+.sass-card .cat-bio {
+    border-top: 2px solid #5cb85c;
+    padding: 1rem;
+}
+
+.sass-card .cat-name {
+    margin: 0 0 8px;
+    color: #357935;
+    font-weight: bold;
+}
+
+.sass-card .cat-age {
+    color: #5cb85c;
+    font-weight: bold;
+}
+
+.sass-card .cat-actions {
+    border-top: 2px solid #5cb85c;
+    padding: calc(1rem / 2) 1rem;
+    overflow: auto;
+}
+
+.sass-card .cat-actions button {
+    font-size: 1rem;
+    padding: 0.375rem 0.75rem;
+    border: 2px solid #5cb85c;
+    border-radius: 0.375rem;
+}
+
+.sass-card .cat-actions button:hover {
+    background: #5cb85c;
+    color: #fff;
+}
+
+.sass-card .cat-actions .btn-like {
+    float: left;
+}
+
+.sass-card .cat-actions .btn-pet {
+    float: right;
+}
+

@@ -1,0 +1,95 @@
+:root {
+    --border-color: #3487B3;
+    --cat-name-color: #ff8c00;
+    --cat-age-color: #65ACD2;
+    --border-radius: 0.375rem;
+    --border-size: 2px;
+    --main-padding-size: 1rem;
+    --btn-vertical-padding: 0.75rem;
+    --btn-horizontal-padding: 0.375rem;
+    --btn-background-color: #D6EEFC;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #f5f5f5;
+}
+
+.page {
+    padding: 24px;
+}
+
+.cats {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cat-card {
+    width: 440px;
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.css-card {
+    border: var(--border-size) solid var(--border-color);
+}
+
+.css-card .cat-image {
+    text-align: center;
+}
+
+.css-card .cat-image img {
+    width: 100%;
+}
+
+.css-card .cat-bio {
+    border-top: var(--border-size) solid var(--border-color);
+    padding: var(--main-padding-size);
+}
+
+.css-card .cat-name {
+    margin: 0 0 8px;
+    color: var(--cat-name-color);
+    font-weight: bold;
+}
+
+.css-card .cat-age {
+    color: var(--cat-age-color);
+    font-weight: bold;
+}
+
+
+.css-card .cat-actions {
+    border-top: var(--border-size) solid var(--border-color);
+    padding: calc(var(--main-padding-size) / 2) var(--main-padding-size);
+    overflow: auto;
+}
+
+.css-card .cat-actions button {
+    font-size: 1rem;
+    padding: var(--btn-horizontal-padding) var(--btn-vertical-padding);
+    border: var(--border-size) solid var(--border-color);
+    border-radius: var(--border-radius);
+    background: var(--btn-background-color);
+
+    &:hover {
+        background: var(--border-color);
+        color: white;
+    }
+}
+
+.css-card .cat-actions .btn-like {
+    float: left;
+}
+
+.css-card .cat-actions .btn-pet {
+    float: right;
+}
